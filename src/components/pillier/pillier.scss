@@ -1,0 +1,29 @@
+.pillier {
+	transform-style: preserve-3d;
+	position: absolute;
+	width: 20px;
+	height: 100%;
+  // transform: rotateY(45deg);
+	.pillier-cote1,
+	.pillier-cote2,
+	.pillier-cote3,
+	.pillier-cote4 {
+    background-image: url(../../../public/assets/boisNoir.jpg);
+		width: 20px;
+		height: 100%;
+		position: absolute;
+    border: 0.5px solid black;
+	}
+	.pillier-cote1 {
+		transform: translateZ(10px);
+}
+	.pillier-cote2 {
+		transform: translateZ(-10px);
+	}
+	.pillier-cote3 {
+    transform: translateX(-10px) rotateY(-90deg);
+	}
+	.pillier-cote4 {
+    transform: translateX(10px) rotateY(90deg);
+	}
+}

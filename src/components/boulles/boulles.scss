@@ -1,0 +1,36 @@
+.boulles{
+position: absolute;
+top: -10px;
+width: 50px;
+height: 80%;
+  .boule{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(../../../public/assets/chrome.jpg);
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+    .fil1,
+    .fil2 {
+      width: 2px;
+      bottom: 25px;
+      position: absolute;
+      background-color: red;
+      z-index: 1;
+      transform-origin: bottom;
+    }
+    .fil1{
+      right: -90%;
+      height: calc(100% - 20px);
+      transform-origin: top;
+      transform: rotate(10deg);
+    }
+    .fil2{
+      left: -95%;
+      height: calc(100% - 60px);
+      transform-origin: top;
+      transform: rotate(-10deg);
+    }
+}

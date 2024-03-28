@@ -1,0 +1,46 @@
+
+.bras{
+  transform-style: preserve-3d;
+	position: absolute;
+	width: 440px;
+	height: 20px;
+  .bras-cote1,
+  .bras-cote2,
+  .bras-cote3,
+  .bras-cote4,
+  .bras-dessus {
+    background-image: url(../../../public/assets/boisNoir.jpg);
+    position: absolute;
+    border: 0.5px solid black;
+  }
+  .bras-cote1,
+  .bras-cote2 {
+    width: 440px;
+    height: 20px;
+  }
+  .bras-cote1 {
+    transform: translateZ(10px);
+  }
+  .bras-cote2 {
+    transform: translateZ(-10px);
+  }
+  .bras-cote3,
+  .bras-cote4 {
+    width: 20px;
+    height: 20px;
+  }
+  .bras-cote3 {
+    transform: translateX(-10px) rotateY(-90deg);
+  }
+  .bras-cote4 {
+    transform: translateX(430px) rotateY(90deg);
+  }
+  .bras-dessus {
+    width: 20px;
+    height: 440px;
+    bottom: 20px;
+    left: 210px;
+    transform-origin: center;
+    transform: translateY(50%) rotateX(90deg) rotateZ(90deg);
+  }
+}
